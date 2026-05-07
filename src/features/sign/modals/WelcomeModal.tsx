@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Heart, Github, Sparkles, ArrowRight } from 'lucide-react';
+import { Github, Sparkles, ArrowRight } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader } from '@/components/ui/Dialog';
 import { Button } from '@/components/ui';
 
