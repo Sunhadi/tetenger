@@ -1,6 +1,12 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { ShieldCheck, HelpCircle, Sun, Moon, Menu } from 'lucide-react';
+import {
+  HelpCircle,
+  Sun,
+  Moon,
+  Menu,
+} from 'lucide-react';
+
 import { Button } from '@/components/ui';
 import type { Theme } from '@/types';
 
@@ -31,15 +37,25 @@ export const Header: React.FC<HeaderProps> = ({
           isSignPage ? 'md:w-[min(24rem,calc(100vw-2rem))]' : ''
         }`}
       >
-        <div className="flex items-center gap-2">
-          <ShieldCheck className="w-5 h-5 text-brand-500 dark:text-brand-400" />
+        {/* Logo + Brand */}
+        <div className="flex items-center gap-3">
+          <img
+            src="/tetenger-logo.png"
+            alt="Tetenger Logo"
+            className="w-7 h-7 object-contain"
+          />
+
           <h2 className="font-bold text-lg tracking-tight">
             Tete
-            <span className="text-brand-500 dark:text-brand-400">nger</span>
+            <span className="text-brand-500 dark:text-brand-400">
+              nger
+            </span>
           </h2>
         </div>
+
+        {/* Actions */}
         <div className="flex items-center gap-1">
-          {/* Show Help button only on sign page */}
+          {/* Help button */}
           {isSignPage && (
             <Button
               variant="ghost"
@@ -51,6 +67,8 @@ export const Header: React.FC<HeaderProps> = ({
               <HelpCircle className="w-5 h-5 text-zinc-500" />
             </Button>
           )}
+
+          {/* Theme toggle */}
           <Button
             variant="ghost"
             className="rounded-full"
@@ -58,9 +76,14 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={onToggleTheme}
             title="Ganti tema"
           >
-            {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            {theme === 'dark' ? (
+              <Sun className="h-4 w-4" />
+            ) : (
+              <Moon className="h-4 w-4" />
+            )}
           </Button>
-          {/* Mobile menu button - only on sign page */}
+
+          {/* Mobile menu */}
           {isSignPage && onToggleSidebar && (
             <Button
               variant="ghost"

@@ -2,7 +2,11 @@
 <html lang="id" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
     <!-- Content Security Policy -->
     <meta
@@ -23,69 +27,125 @@
     />
 
     <!-- Primary Meta Tags -->
-    <title>Tetenger - Solusi Penanda & Bukti Digital yang AutentikSolusi Penanda & Bukti Digital yang Autentik</title>
-    <meta name="title" content="Tetenger - Solusi Penanda & Bukti Digital yang Autentik" />
+    <title>
+      Tetenger - Solusi Penanda & Bukti Digital yang Autentik
+    </title>
+
+    <meta
+      name="title"
+      content="Tetenger - Solusi Penanda & Bukti Digital yang Autentik"
+    />
+
     <meta
       name="description"
       content="Tambahkan tanda tangan dan stempel ke dokumen PDF dengan aman. Semua proses berjalan offline di browser Anda, menjamin privasi dokumen sensitif Anda."
     />
+
     <meta
       name="keywords"
       content="tanda tangan digital, PDF, stempel, paraf, dokumen, offline, privasi, aman, gratis, Indonesia"
     />
+
     <meta name="author" content="Tetenger" />
+
     <meta name="robots" content="index, follow" />
+
     <meta name="language" content="Indonesian" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://tetenger.com/" />
-    <meta property="og:title" content="Tetenger - Solusi Penanda & Bukti Digital yang Autentik" />
+
+    <meta
+      property="og:url"
+      content="https://tetenger.com/"
+    />
+
+    <meta
+      property="og:title"
+      content="Tetenger - Solusi Penanda & Bukti Digital yang Autentik"
+    />
+
     <meta
       property="og:description"
       content="Tambahkan tanda tangan dan stempel ke dokumen PDF dengan aman. Semua proses berjalan offline di browser Anda."
     />
-    <meta property="og:image" content="https://tetenger.com/og-image.png" />
+
+    <meta
+      property="og:image"
+      content="https://tetenger.com/logo.png"
+    />
+
     <meta property="og:locale" content="id_ID" />
+
     <meta property="og:site_name" content="Tetenger" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://tetenger.com/" />
+    <meta
+      property="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      property="twitter:url"
+      content="https://tetenger.com/"
+    />
+
     <meta
       property="twitter:title"
       content="Tetenger - Solusi Penanda & Bukti Digital yang Autentik"
     />
+
     <meta
       property="twitter:description"
       content="Tambahkan tanda tangan dan stempel ke dokumen PDF dengan aman. Semua proses berjalan offline di browser Anda."
     />
-    <meta property="twitter:image" content="https://tetenger.com/og-image.png" />
+
+    <meta
+      property="twitter:image"
+      content="https://tetenger.com/logo.png"
+    />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#16a34a" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/tetenger-logo.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="/logo.png"
+    />
+
+    <meta
+      name="theme-color"
+      content="#16a34a"
+    />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://tetenger.com/" />
+    <link
+      rel="canonical"
+      href="https://tetenger.com/"
+    />
 
     <!-- Theme Script -->
     <script>
       (function () {
         const storageKey = 'tetenger-theme';
-        const theme = localStorage.getItem(storageKey) || 'dark';
+        const theme =
+          localStorage.getItem(storageKey) || 'dark';
+
         const root = document.documentElement;
 
         root.classList.remove('light', 'dark');
 
         if (theme === 'system') {
-          const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const systemTheme = window.matchMedia(
+            '(prefers-color-scheme: dark)'
+          ).matches
             ? 'dark'
             : 'light';
+
           root.classList.add(systemTheme);
         } else {
           root.classList.add(theme);
@@ -101,7 +161,7 @@
         "name": "Tetenger - Solusi Penanda & Bukti Digital yang Autentik",
         "description": "Tambahkan tanda tangan dan stempel ke dokumen PDF dengan aman. Semua proses berjalan offline di browser Anda.",
         "url": "https://tetenger.com/",
-        "image": "https://tetenger.com/og-image.png",
+        "image": "https://tetenger.com/logo.png",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Any",
         "offers": {
@@ -119,8 +179,13 @@
       }
     </script>
   </head>
+
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <script
+      type="module"
+      src="/src/main.tsx"
+    ></script>
   </body>
 </html>
