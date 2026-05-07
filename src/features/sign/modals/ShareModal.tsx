@@ -75,11 +75,11 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
         <DialogHeader className="p-4 border-b bg-zinc-50 dark:bg-zinc-900">
           <p className="text-sm font-semibold text-brand-500 dark:text-brand-400 uppercase tracking-wide flex items-center gap-2">
             <Share2 className="w-4 h-4" />
-            Bagikan ParafAman
+            Bagikan Tetenger
           </p>
         </DialogHeader>
         <div className="p-4 text-sm space-y-4 bg-background">
-          <h2 className="text-xl font-bold">Kamu suka ParafAman?</h2>
+          <h2 className="text-xl font-bold">Kamu suka Tetenger?</h2>
           <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
             Sebarkan web ini ke sosial media kamu biar yang lain juga tahu dan bisa pakai! Bantu
             kami menyebarkan alat gratis ini ke lebih banyak orang.
@@ -160,7 +160,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose }) => {
           </div>
 
           <p className="text-xs text-center text-muted-foreground pt-2">
-            Terima kasih sudah membantu menyebarkan ParafAman!
+            Terima kasih sudah membantu menyebarkan Tetenger!
           </p>
         </div>
       </DialogContent>
